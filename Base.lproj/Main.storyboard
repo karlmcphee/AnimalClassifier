@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimalSpeciesIdentifier" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="image1" translatesAutoresizingMaskIntoConstraints="NO" id="UHv-nQ-gqz">
+                                <rect key="frame" x="76" y="172" width="240" height="236"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Results" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hSu-NM-5gG">
+                                <rect key="frame" x="49" y="555" width="295" height="71"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="Z6n-xG-17g"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rby-Af-vEK">
+                                <rect key="frame" x="109" y="444" width="175" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="4vT-ls-p83"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Identify the animal"/>
+                                <connections>
+                                    <action selector="identifyImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Pm-bw-f4T"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="1" green="0.93955332273771597" blue="0.82688798955933129" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UHv-nQ-gqz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="16y-YL-79L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hSu-NM-5gG" secondAttribute="bottom" constant="192" id="2Wo-Vo-gTu"/>
+                            <constraint firstItem="rby-Af-vEK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="128" id="61S-A2-IyJ"/>
+                            <constraint firstItem="rby-Af-vEK" firstAttribute="top" secondItem="UHv-nQ-gqz" secondAttribute="bottom" constant="37" id="7L1-kl-ia6"/>
+                            <constraint firstItem="UHv-nQ-gqz" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="113" id="8sp-iC-hZ8"/>
+                            <constraint firstItem="UHv-nQ-gqz" firstAttribute="centerX" secondItem="rby-Af-vEK" secondAttribute="centerX" id="HhF-WX-0fx"/>
+                            <constraint firstItem="hSu-NM-5gG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="49" id="bvs-au-hJm"/>
+                            <constraint firstItem="hSu-NM-5gG" firstAttribute="top" secondItem="rby-Af-vEK" secondAttribute="bottom" constant="21" id="d6K-7h-g1D"/>
+                            <constraint firstItem="rby-Af-vEK" firstAttribute="centerX" secondItem="hSu-NM-5gG" secondAttribute="centerX" id="eBu-13-rYY"/>
+                            <constraint firstItem="UHv-nQ-gqz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ztg-sc-anr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgView" destination="UHv-nQ-gqz" id="i6w-TC-a1Z"/>
+                        <outlet property="resultsLabel" destination="hSu-NM-5gG" id="RsN-Oj-y54"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="119.84732824427481" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="image1" width="318" height="240"/>
+    </resources>
+</document>
