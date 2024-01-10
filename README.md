@@ -1,0 +1,1 @@
+With 90 classes, a basic convolutional model isn't very effective and had about 30% accuracy. Transfer learning produced better results, with XCeption performing best with the current structure at 90%. 
